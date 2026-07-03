@@ -138,6 +138,8 @@ function App() {
         <span>ТИХИЙ ЧАС</span>
       </header>
 
+      <p className="signature">Сделано <strong>Tripov</strong></p>
+
       <section className="timer-card" aria-label="Таймер обратного отсчёта">
         <div className={`timer-ring ${running ? 'is-running' : ''}`} style={circleStyle}>
           <div className="timer-face">

@@ -31,6 +31,8 @@ button { -webkit-tap-highlight-color: transparent; }
 .brand { grid-column: 1 / -1; display: flex; align-items: center; gap: 11px; color: var(--dark); font-size: 12px; font-weight: 700; letter-spacing: .2em; }
 .brand-mark { width: 28px; height: 28px; display: grid; place-items: center; border: 1.5px solid var(--dark); border-radius: 50%; }
 .brand-mark span { width: 6px; height: 6px; background: var(--accent); border-radius: 50%; box-shadow: 0 -7px 0 -2px var(--dark), 0 7px 0 -2px var(--dark); }
+.signature { position: fixed; right: max(24px, 5vw); bottom: 23px; z-index: 2; margin: 0; color: #96938b; font-size: 11px; letter-spacing: .04em; }
+.signature strong { color: var(--dark); font-weight: 700; }
 
 .timer-card { display: flex; flex-direction: column; align-items: center; justify-content: center; min-height: 570px; }
 .timer-ring { width: min(450px, 38vw); aspect-ratio: 1; border-radius: 50%; padding: 7px; box-shadow: 0 26px 70px rgba(47,45,38,.12); transition: background .4s ease; }
@@ -85,6 +87,7 @@ h1 { margin: 8px 0 0; font-size: clamp(25px, 2.5vw, 36px); line-height: 1.16; le
   .timer-ring { width: min(390px, 87vw); }
   time { font-size: clamp(31px, 9vw, 48px); }
   .settings { margin: 48px auto 0; padding: 29px 22px; border-radius: 25px; }
+  .signature { position: static; margin: 35px 0 0; text-align: center; }
 }
 
 @media (max-width: 420px) {

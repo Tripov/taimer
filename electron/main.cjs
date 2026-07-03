@@ -10,6 +10,7 @@ function createWindow() {
     minWidth: 720,
     minHeight: 650,
     title: 'Тихий час',
+    icon: path.join(__dirname, '..', 'build', 'icon.png'),
     backgroundColor: '#f4f0e8',
     show: false,
     webPreferences: {

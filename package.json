@@ -3,6 +3,7 @@
   "private": true,
   "version": "1.0.0",
   "description": "Красивый настольный таймер с заметным оповещением",
+  "author": "Tripov",
   "main": "electron/main.cjs",
   "type": "module",
   "scripts": {
@@ -37,13 +38,16 @@
     "files": [
       "dist/**/*",
       "electron/**/*",
+      "build/icon.png",
       "package.json"
     ],
     "mac": {
       "category": "public.app-category.productivity",
+      "icon": "build/icon.png",
       "target": ["dmg", "zip"]
     },
     "win": {
+      "icon": "build/icon.png",
       "target": ["nsis", "portable"]
     },
     "nsis": {
